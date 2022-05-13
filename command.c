@@ -20,6 +20,10 @@ void run(cmd_t *cmd)
 		{"div", divide},
 		{"mul", mul},
 		{"mod", mod},
+		{"rotr", rotr},
+		{"rotl", rotl},
+		{"stack", stack_mode},
+		{"queue", queue_mode},
 		{NULL, NULL}
 	};
 	int i = 0;

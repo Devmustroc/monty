@@ -72,5 +72,6 @@ void mul(cmd_t *cmd);
 void mod(cmd_t *cmd);
 void stack_mode(cmd_t *cmd);
 void queue_mode(cmd_t *cmd);
-
+void rotl(cmd_t *cmd);
+void rotr(cmd_t *cmd);
 #endif
