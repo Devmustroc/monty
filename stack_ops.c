@@ -137,4 +137,41 @@ void rotl(cmd_t *cmd)
 	second->prev = NULL;
 	*h = second;
 }
+/**
+ * rotr - rotates the stack to the bottom
+ *
+ * @cmd: access to specific data from command struct
+ */
 
+void rotr(cmd_t *cmd)
+{
+	stack_t **h = cmd->head;
+	stack_t *first = NULL;
+	stack_t *second = NULL;
+	stack_t *last = NULL;
+
+	if (h == NULL || *h == NULL || (*h)->next == NULL)
+		return;
+
+	if ((*h)->next->next == NULL)
+	{
+		swap(cmd);
+		return;
+	}
+
+	first = *h;
+	second = *h;
+	last = *h;
+
+	while (last->next != NULL)
+		last = last->next;
+
+	while (second->next != last)
+		second = second->next;
+
+	last->next = first;
+	last->prev = first->prev;
+	first->prev = last;
+	second->next = NULL;
+	*h = last;
+}
