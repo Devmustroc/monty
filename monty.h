@@ -67,5 +67,8 @@ void nop(cmd_t *cmd);
 void pchar(cmd_t *cmd);
 void pstr(cmd_t *cmd);
 void sub(cmd_t *cmd);
+void divide(cmd_t *cmd);
+void mul(cmd_t *cmd);
+void mod(cmd_t *cmd);
 
 #endif

@@ -17,6 +17,9 @@ void run(cmd_t *cmd)
 		{"pchar", pchar},
 		{"pstr", pstr},
 		{"sub", sub},
+		{"div", divide},
+		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 	int i = 0;
