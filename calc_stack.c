@@ -90,7 +90,7 @@ void mul(cmd_t *cmd)
 	stack_t **h = cmd->head;
 	stack_t *node_1 = NULL;
 	stack_t *node_2 = NULL;
-	int result;
+	int resul;
 
 	if (h == NULL || *h == NULL || (*h)->next == NULL)
 	{
@@ -101,8 +101,8 @@ void mul(cmd_t *cmd)
 	node_1 = *h;
 	node_2 = (*h)->next;
 
-	result = node_2->n * node_1->n;
-	node_2->n = result;
+	resul = node_2->n * node_1->n;
+	node_2->n = resul;
 
 	pop(cmd);
 }
