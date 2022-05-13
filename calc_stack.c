@@ -94,7 +94,7 @@ void mul(cmd_t *cmd)
 
 	if (h == NULL || *h == NULL || (*h)->next == NULL)
 	{
-		fprintf("L%d: can't mul, stack too short\n", cmd->line_number);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", cmd->line_number);
 		exit(EXIT_FAILURE);
 	}
 
