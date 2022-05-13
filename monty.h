@@ -70,5 +70,7 @@ void sub(cmd_t *cmd);
 void divide(cmd_t *cmd);
 void mul(cmd_t *cmd);
 void mod(cmd_t *cmd);
+void stack_mode(cmd_t *cmd);
+void queue_mode(cmd_t *cmd);
 
 #endif
